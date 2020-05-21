@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8201 
+spring:
+  profiles: dev
+  application:
+    name: cloud-config-client
+
+---
+server:
+  port: 8202
+spring:
+  profiles:test
+  application:
+    name: cloud-config-client
